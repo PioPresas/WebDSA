@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>GALACTIC ADVENTURE</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+  .container {
+    padding: 80px 120px;
+  }
+  body {
+    font: 20px Montserrat, sans-serif;
+    line-height: 1.8;
+  }
+  .bg-1 {
+    background: #2d2d30;
+    color: #bdbdbd;
+  }
+  </style>
+
+</head>
+<body>
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">GALACTIC ADVENTURE</a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">Download Game</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="#"><span class="glyphicon glyphicon-user"></span> Register</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        </ul>
+    </div>
+</nav>
+
+<div id="home" class="container-fluid text-center">
+    <h3>GALACTIC ADVENTURE</h3>
+    <img src="logo.jpg" width="600" height="350" class="img-rounded">
+    <p> Año 2043: La vida en la Tierra se ha vuelto insostenible y la supervivencia de la especie humana está amenazada. La única oportunidad que tienen los humanos es la nave espacial “Galactic Ship”. </p>
+    <p> Desde hace unos años, se sospecha que un planeta de la galaxia Andrómeda podría acoger las características necesarias para la colonización y supervivencia de la humanidad y la Galactic Ship se dirige hacia allí.
+        Su objetivo es descubrir si dicho planeta es habitable y así encontrar un nuevo hogar para los terrícolas.
+        El camino es complicado y la aventura oculta un sinfín de obstáculos y enemigos.</p>
+    <p> ¿Serás capaz de salvar a la humanidad?</p>
+</div>
+
+<div class="jumbotron">
+    <div class="container text-center">
+        <h1>Online Store</h1>
+        <p>Weapons, tools and armor</p>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-4">
+            <div class="panel panel-danger">
+                <div class="panel-heading">Pistola Laser</div>
+                <div class="panel-body"><img src="pistola laser.png" class="img-responsive" style="width:100%" alt="Image" ></div>
+                <div class="panel-footer">Arma de largo alcance con mucho daño</div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="panel panel-danger">
+                <div class="panel-heading">Lanzallamas</div>
+                <div class="panel-body"><img src="lanzallamas.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
+                <div class="panel-footer">Arma de corto alcance con daño en area</div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="panel panel-danger">
+                <div class="panel-heading">pistola</div>
+                <div class="panel-body"><img src="pistola.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
+                <div class="panel-footer">arma inicial</div>
+            </div>
+        </div>
+    </div>
+</div><br>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-4">
+            <div class="panel panel-primary">
+                <div class="panel-heading">bombona de oxígeno</div>
+                <div class="panel-body"><img src="oxigeno.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
+                <div class="panel-footer">consumible para aumentar tu oxigeno</div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="panel panel-primary">
+                <div class="panel-heading">poción de vida</div>
+                <div class="panel-body"><img src="vida.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
+                <div class="panel-footer">consumible que aumenta tu vida</div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="panel panel-primary">
+                <div class="panel-heading">placa de armadura</div>
+                <div class="panel-body"><img src="armadura.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
+                <div class="panel-footer">placa de protección ante enemigos</div>
+            </div>
+        </div>
+    </div>
+</div><br><br>
+
+
+<div class="bg-1">
+    <div id="Login" class="container-fluid">
+        <div class="row">
+                    <div class="container text-center">
+                        <form action="/action_page.php" id="loginform">
+                            <p> Username </p>
+                            <input type="text" required id="username" placeholder="Enter username" />
+                            <p>Password</p>
+                            <input  type="password" required id="password" placeholder="Enter password" />
+                            <br>
+                            <div class="checkbox">
+                            <label><input type="checkbox" name="remember"> Remember me</label>
+                    </div>
+                        </form>
+                        <br>
+                        <button type="button" class="btn btn-primary btn-lg">Login</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<div id="Register" class="container-fluid">
+
+    <div class="register-form-container">
+        <h3> Sign Up</h3>
+        <h3 class="form-title"><span class="glyphicon glyphicon-pencil"></span></h3>
+    <form action="/action_page.php">
+
+        <div class="form-group">
+            <div class="input-group">
+                <div class="input-group-addon"><span class="glyphicon glyphicon-user"></span></div>
+                <input name="name" type="text" class="form-control" placeholder="Username">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="input-group">
+                <div class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span></div>
+                <input name="email" type="text" class="form-control" placeholder="Email">
+            </div>
+        </div>
+
+        <div class="row">
+
+            <div class="form-group col-lg-6">
+                <div class="input-group">
+                    <div class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></div>
+                    <input name="password" id="password" type="password" class="form-control" placeholder="Password">
+                </div>
+            </div>
+
+            <div class="form-group col-lg-6">
+                <div class="input-group">
+                    <div class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></div>
+                    <input name="cpassword" type="password" class="form-control" placeholder="Retype Password">
+                </div>
+            </div>
+        </div>
+    </form>
+    </div>
+</div>
+
+<div class="bg-1">
+    <footer id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+                <h4> About us </h4>
+                <br>
+                <h4> Joel Alcalde <br>
+                    Cristian Sanz <br>
+                    Daniel Díaz <br>
+                    Pio Presas
+                </h4>
+            </div>
+
+            <div class="col-lg-4">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="shop"><i class="icon-check"></i>Shop</a></li>
+                    <li><a href="login"><i class="icon-check"></i>Log in</a></li>
+                    <li><a href="register"><i class="icon-check"></i>Register</a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg-4">
+                <h4>Contact Information</h4>
+                <ul class="footer-links">
+                    <li>Castelldefels,<br> Spain</li>
+                    <li>+34 *** ** ** **</li>
+                    <li>cualquiermail@gmail.com</li>
+                    <li><a target="_blank" rel="noopener noreferrer" href="https://www.google.es/maps/@41.3844801,2.153439,13z?hl=en"><i class="icon-location4"></i> Castelldefels, BCN</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="assets/jquery-1.11.2.min.js"></script>
+<script src="assets/jquery.validate.min.js"></script>
+</body>
+</html>
